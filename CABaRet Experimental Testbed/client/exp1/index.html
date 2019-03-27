@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>
+				Exp-CABaRet: An experimental testbed for "QoE - QoS - QoR" evaluation
+			</title>
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="../CSS/style.css">
+			<meta charset="UTF-8"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src='exp1.js'></script>
+
+	</head>
+	<body>
+		<div id="playerandrecs">
+			<div id="playerandrating">
+					<h1 style="margin-left: 12%;">Video Player</h1>
+					<div id="player"><img src="../Resources/Images/youtubePic.jpg" border="2" padding="15px" width="530px" height="360px"/></div>	
+					<h1 style="margin-left: 12%">Rate:</h1>
+
+					<div class="stars" id="ratingSystem">						
+						<h3>Your interest in the content of the video</h3>
+						<div id="block2">
+							<form id="disRating" action="">
+								<input class="star star-5" id="star-51" value=5 type="radio" disabled name="interest" />
+								<label class="star star-5" title="Wooow! That's my best video content/topic!!" for="star-51"></label>
+								<input class="star star-4" id="star-41" value=4 type="radio" disabled name="interest" />
+								<label class="star star-4" title="I like so much the content/topic of this video!" for="star-41"></label>
+								<input class="star star-3" id="star-31" value=3 type="radio" disabled name="interest" />
+								<label class="star star-3" title="I enjoy the content/topic of this video!" for="star-31"></label>
+								<input class="star star-2" id="star-21" value=2 type="radio" disabled name="interest" />
+								<label class="star star-2" title="I don't feel that much interested in the content/topic of this video!" for="star-21"></label>
+								<input class="star star-1" id="star-11" value=1 type="radio" disabled name="interest" />
+								<label class="star star-1" title="I don't care at all about the content/topic of this video!" for="star-11"></label>
+							</form>
+						</div>
+
+						<h3><br><br><br>Your satisfaction in the quality of the video (in terms of interruptions)<br></h3>
+						<div id="block3">
+							<form id="qualRating" action="">
+								<input class="star star-5" id="star-151" value=5 type="radio" disabled name="qual" />
+								<label class="star star-5" title="Best quality - Wow!! That's what I'm talking about!!" for="star-151"></label>
+								<input class="star star-4" id="star-141" value=4 type="radio" disabled name="qual" />
+								<label class="star star-4" title="Good quality - I enjoy watching this video" for="star-141"></label>
+								<input class="star star-3" id="star-131" value=3 type="radio" disabled name="qual" />
+								<label class="star star-3" title="Decent quality - It's a regular video session!" for="star-131"></label>
+								<input class="star star-2" id="star-121" value=2 type="radio" disabled name="qual" />
+								<label class="star star-2" title="Bad quality - I can't enjoy watching this video!" for="star-121"></label>
+								<input class="star star-1" id="star-111" value=1 type="radio" disabled name="qual" />
+								<label class="star star-1" title="Worst quality - My eyes hurt!!" for="star-111"></label>
+							</form>
+						</div>
+
+						<h3><br><br><br>The relevance of the recommendation list</h3>
+						<div id="block1">
+							<form id="recRating" action="">
+								<input class="star star-5" id="star-5" value=5 type="radio" disabled name="rec" />
+								<label class="star star-5" title="Wooow! Those recommendations offer exactly what I would like to watch next!!" for="star-5"></label>
+								<input class="star star-4" id="star-4" value=4 type="radio" disabled name="rec" />
+								<label class="star star-4" title="Those recommendations are pretty relevant with the video topic!" for="star-4"></label>
+								<input class="star star-3" id="star-3" value=3 type="radio" disabled name="rec" />
+								<label class="star star-3" title="Hmmm...Regular recommendations!" for="star-3"></label>
+								<input class="star star-2" id="star-2" value=2 type="radio" disabled name="rec" />
+								<label class="star star-2" title="Those recommendations are not good!" for="star-2"></label>
+								<input class="star star-1" id="star-1" value=1 type="radio" disabled name="rec" />
+								<label class="star star-1" title="Those recommendations suck!!" for="star-1"></label>
+							</form>
+						</div>
+
+						<h3><br><br><br>Your overall enjoyment in watching this video and recommendations</h3>
+						<div id="block0">
+							<form id="generalRating" action="">
+								<input class="star star-5" id="star-515" value=5 type="radio" disabled name="general" />
+								<label class="star star-5" title="This video session was awesome!!" for="star-515"></label>
+								<input class="star star-4" id="star-414" value=4 type="radio" disabled name="general" />
+								<label class="star star-4" title="This video session was pretty good." for="star-414"></label>
+								<input class="star star-3" id="star-313" value=3 type="radio" disabled name="general" />
+								<label class="star star-3" title="It was a regular video session" for="star-313"></label>
+								<input class="star star-2" id="star-212" value=2 type="radio" disabled name="general" />
+								<label class="star star-2" title="The video session was not that good." for="star-212"></label>
+								<input class="star star-1" id="star-101" value=1 type="radio" disabled name="general" />
+								<label class="star star-1" title="This session was aweful!" for="star-101"></label>
+							</form>
+						</div>
+
+						<h3><br><br><br><br><br>(Optional) Add any extra comments on this video session </h3>
+						<textarea style="margin-left:12%;width:100%;" id='optional' maxlength="500" rows="10" cols="50"></textarea>
+					</div>				
+			</div>
+			<div id="reclist">
+				<h1>Recommendations</h1>
+				<nav id="navigator">
+					<ul class="list-group" id="results"></ul>
+				</nav>
+			</div>	
+		</div>
+	</body>
+</html>
