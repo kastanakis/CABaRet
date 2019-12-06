@@ -38,6 +38,17 @@ https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-
   
 https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x/
 
+## Application Architecture
+here describe the scripts of the application in short and possibly show a flow diagram (how data gets through the app)
+
+## How to execute queries to the YouTube Data API 
+In order to make requests (and receive responses) to the YouTube Data API, you need an API key. You can get yours following this link:
+
+https://developers.google.com/youtube/v3/getting-started .
+When you acquire your key, place it in the server scripts that interact with the YouTube API:
+  - mostPopularHomepage.php (retrieves most popular videos of the current period and populates homepage)
+  - relatedVideos.php (retrieves related videos of a specific video - used in recommendation algorithm)
+
 ## Collected data
   - We conducted an experimental campaign recruiting participants through mailing lists and social media, and collected 742 samples from users in regions around the world. 
   - Adding to the platform code, we also publish the dataset with the results of our experiments. 
