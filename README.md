@@ -11,7 +11,7 @@ Our  goals are:
 The platform is built on top of the YouTube video service: it streams videos through the YouTube service, 
 and uses the YouTube API to retrieve recommendations and related contents.
 This exerimental testbed uses HTML, CSS, JavaScript and PHP in a client-server architecture.
-This repository contains the code for the client and server respectively
+You can find the code for the client and server in this repository.
 
 ## Experiment Session
 The UI is designed to accommodate our experiments and a screenshot is shown below.
