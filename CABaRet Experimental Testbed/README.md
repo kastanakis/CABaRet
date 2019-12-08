@@ -10,8 +10,11 @@ Our  goals are:
 ## Overview
 The platform is built on top of the YouTube video service: it streams videos through the YouTube service, 
 and uses the YouTube API to retrieve recommendations and related contents.
-This exerimental testbed uses HTML, CSS, JavaScript and PHP in a client-server architecture.
-You can find the code for the client and server in this repository.
+This exerimental testbed uses HTML, CSS, JavaScript and PHP on an Apache HTTP Server. It logs every experiment session in a JSON format.
+In this repository you can find:
+- the code for Front-End
+- the code for Back-End
+- past experimental logs
 
 ## Experiment Session
 The UI is designed to accommodate our experiments and a screenshot is shown below.
@@ -34,10 +37,13 @@ Below you can find tutorials on how to setup the prerequisites:
   - <a href="https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/">Windows 10</a> 
   
   - <a href="https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x/">Mac OS X</a> 
-  
+
+If you want to setup your own domain and make this experiment public (not just localhost), visit <a href="https://www.noip.com/">noip.</a> 
 
 ## Application Architecture
 here describe the scripts of the application in short and possibly show a flow diagram (how data gets through the app)
+  ### Client
+  ### Server
 
 ## How to execute queries to the YouTube Data API 
 In order to make requests (and receive responses) to the YouTube Data API, you need an API key. You can get yours following this link:
