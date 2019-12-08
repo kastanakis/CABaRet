@@ -23,20 +23,18 @@ Finally, the recommendation module is implemented, using CABaRet as the recommen
 </p>
 
 ## How to setup the hosting environment of the application
-The application is hosted on an Ubuntu 16.04 server, which runs Apache Web Server with PHP. 
-It can also be hosted on a Windows or Mac machine. Below you can find tutorials on how to setup the prerequisites:
+The application is hosted on an Ubuntu 16.04 server, which runs Apache Web Server with PHP.
 
-  - Ubuntu 16.04: 
-  
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
+To get started with Apache HTTP Server, take a look <a href="https://httpd.apache.org/docs/trunk/en/getting-started.html">here.</a>
 
-  - Windows 10: 
-  
-https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/
+Below you can find tutorials on how to setup the prerequisites:
 
-  - Mac OS X: 
+  - <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04">Ubuntu 16.04</a>
   
-https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x/
+  - <a href="https://www.znetlive.com/blog/how-to-install-apache-php-and-mysql-on-windows-10-machine/">Windows 10</a> 
+  
+  - <a href="https://jasonmccreary.me/articles/install-apache-php-mysql-mac-os-x/">Mac OS X</a> 
+  
 
 ## Application Architecture
 here describe the scripts of the application in short and possibly show a flow diagram (how data gets through the app)
