@@ -40,11 +40,6 @@ Below you can find tutorials on how to setup the prerequisites:
 
 If you want to setup your own domain and make this experiment public (not just localhost), visit <a href="https://www.noip.com/">noip.</a> 
 
-## Application Architecture
-here describe the scripts of the application in short and possibly show a flow diagram (how data gets through the app)
-  ### Client
-  ### Server
-
 ## How to execute queries to the YouTube Data API 
 In order to make requests (and receive responses) to the YouTube Data API, you need an API key. You can get yours following this link:
 
