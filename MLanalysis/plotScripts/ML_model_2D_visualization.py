@@ -15,7 +15,7 @@ from sklearn.neural_network import MLPRegressor, MLPClassifier
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, median_absolute_error, accuracy_score
 
 
-INPUT_FILE = 'C:\\Users\\kastanakis\\Documents\\GitHub\\youtube\\CABaRet_Analysis\\qoeModel\\ratings_1-0.txt'
+INPUT_FILE = 'CABaRet\\MLanalysis\\ratings_1-0.txt'
 REMOVE_OUTLIERS = True
 PERCENTAGE_TRAIN = 0.99#8
 FONTSIZE = 20

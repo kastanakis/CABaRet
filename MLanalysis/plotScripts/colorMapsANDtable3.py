@@ -45,10 +45,9 @@ def splitData(df):
 ################################# - START - #################################
 ############################# - PREPROCESSING - #############################
 # Read the json file
-with open("youtube/CABaRet_Analysis/qoeModel/ratings_1-0.json") as f:
+with open("CABaRet/MLanalysis/ratings_1-0.json") as f:
     data = json.load(f)
-# with open("youtube/CABaRet_Analysis/qoeModel/updatedDatasetWithPrevQoR.json") as f:
-#     data = json.load(f)
+    
 # Extract current columns
 df_base = pd.DataFrame(data, columns=["QoS", "QoR", "Int", "QoE", 'Hit'])
 
