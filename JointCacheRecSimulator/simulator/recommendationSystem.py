@@ -117,7 +117,7 @@ def main():
         ["aaaa", "bbbb", "cccc", "dddd", "eeee", "ffff"])
     # _contentCatalogue.createRandomContentMatrix()
     _contentCatalogue.loadContentMatrix_JSON(
-        r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\dynamic_caching\Simulator\contentMatrix.json')
+        r'JointCachingRecommendations\dynamic_caching\Simulator\contentMatrix.json')
     print(_contentCatalogue.characteristics())
     
     _cache = LRUCache(size=1)

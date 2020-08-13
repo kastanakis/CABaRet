@@ -225,12 +225,12 @@ def main():
     # Get content catalogue
     names = [_ for _ in r.getContents()]
     df = pd.DataFrame(r.contentMatrix, index=names, columns=names)
-    df.to_csv(r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\contentCatalogue.csv', sep='\t')
+    df.to_csv(r'JointCachingRecommendations\Results\contentCatalogue.csv', sep='\t')
 
     # Get top most popular contents
     mostPopularContents = r.getContents()[0:MP]
     # print(r.relatedContents(mostPopularContents[0]))
-    with open(r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\mostPopular.json', 'w') as f:
+    with open(r'JointCachingRecommendations\Results\mostPopular.json', 'w') as f:
         json.dump(mostPopularContents, f, indent=4)
 
     # Get depth 1 related
@@ -238,7 +238,7 @@ def main():
     for popular in mostPopularContents:
         depth1[popular] = [x[0] for x in r.relatedContents(popular)[0:W]]
         # print(len(depth1[popular]))
-    with open(r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\dataSet_depth1_width50.json', 'w') as f:
+    with open(r'JointCachingRecommendations\Results\dataSet_depth1_width50.json', 'w') as f:
         json.dump(depth1, f, indent=4)
 
     # Get depth 2 related
@@ -247,7 +247,7 @@ def main():
     depth2 = {}
     for item in depth1values:
         depth2[item] = [x[0] for x in r.relatedContents(item)[0:W]]
-    with open(r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\dataSet_depth2_width50.json', 'w') as f:
+    with open(r'JointCachingRecommendations\Results\dataSet_depth2_width50.json', 'w') as f:
         json.dump(depth2, f, indent=4)
 
 

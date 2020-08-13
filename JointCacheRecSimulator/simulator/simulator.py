@@ -29,13 +29,13 @@ def main():
     # Load a content catalogue
     _contentCatalogue = contentCatalogue(size=CONTENT_CATALOGUE_SIZE)
     _contentCatalogue.loadContentMatrix_CSV(
-        r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\contentCatalogue.csv')
+        r'JointCachingRecommendations\Results\contentCatalogue.csv')
     # print(_contentCatalogue.characteristics())
 
     # Load optimal cached contents generated from optimization algorithm
     _cache = LRUCache()
     out = None
-    with open(r'C:\Users\kastanakis\Documents\GitHub\JointCachingRecommendations\Results\optimizationAlgoResults\N10_C10_Pzipf-1_greedy_cache_opt.json', 'r') as f:
+    with open(r'JointCachingRecommendations\Results\optimizationAlgoResults\N10_C10_Pzipf-1_greedy_cache_opt.json', 'r') as f:
         out = json.load(f)
     _cache.initializeCache(out['cache_vector'])
     print(_cache.characteristics())
